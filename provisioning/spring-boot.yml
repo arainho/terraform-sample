@@ -1,0 +1,6 @@
+- hosts: webapps
+  vars:
+    springboot_application_name: gs-rest-service
+    springboot_src: src/gs-rest-service-0.1.0.jar
+  roles:
+    - role: ansible-springboot
