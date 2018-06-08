@@ -5,9 +5,10 @@ GIT_USER_CONTENT="https://raw.githubusercontent.com/arainho/rho/master/"
 
 # dependencies
 apt-get update -y
-apt-get install -y software-properties-common ansible curl git 
+apt-get install -y software-properties-common
 apt-add-repository -y ppa:ansible/ansible
 apt-get update -y
+apt-get install -y ansible curl git 
 ansible-galaxy install remyma.springboot
 
 # grab webapp jar and ansible playbook 
