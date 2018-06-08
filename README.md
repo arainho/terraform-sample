@@ -35,8 +35,17 @@ Generate an execution plan
 terraform plan -out="./terraform.plan"
 ```
 
+# 6. Scale Up and Down
+To change the number of application servers, edit `main.tf` and change `count` value.
 
-# 6. Checking requirements
+```
+vi main.tf
+ 
+  count = 3
+```
+
+
+# 7. Checking requirements
 
 - [ ] Define Infrastructure using terraform.
 - [ ] Here you should assume that you are using an empty provider; 

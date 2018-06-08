@@ -115,7 +115,6 @@ resource "aws_instance" "web" {
   }
 
   instance_type = "t2.micro"
-  count = 2
 
   # Lookup the correct AMI based on the region
   # we specified
@@ -133,5 +132,8 @@ resource "aws_instance" "web" {
   subnet_id = "${aws_subnet.default.id}"
 
   user_data              = "${file("provisioning/userdata.sh")}"
+
+  # Increase number of application servers
+  count = 3
 
 }
