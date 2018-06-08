@@ -1,5 +1,7 @@
-# rho
+# Deploy with Terraform and provisioning with Ansible 
 DevOps Exercice
+- deploy 1 ELB and 2 EC2 ubuntu instances        ( terraform )
+- provisioning 2 Spring Boot Application Servers ( ansible )
 
 # 0. Generate SSH Keys 
 First generate public/private rsa key pair
