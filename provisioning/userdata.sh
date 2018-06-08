@@ -1,6 +1,6 @@
 #!/bin/bash -v
 
-JAR_FILE="gs-rest-service-0.1.0.jar"
+JAR_FILE="gs-rest-service.jar"
 GIT_USER_CONTENT="https://raw.githubusercontent.com/arainho/rho/master/"
 
 # dependencies
@@ -11,9 +11,13 @@ apt-get update -y
 ansible-galaxy install remyma.springboot
 
 # grab webapp jar and ansible playbook 
-curl ${GIT_USER_CONTENT}/src/${JAR_FILE} -o ${JAR_FILE}
-curl ${GIT_USER_CONTENT}/provisioning/ansible_hosts -o ansible_hosts
-curl ${GIT_USER_CONTENT}/provisioning/spring-boot.yml -o spring-boot.yml
+mkdir src
+if cd src
+then
+    curl ${GIT_USER_CONTENT}/src/${JAR_FILE} -o ${JAR_FILE}
+    curl ${GIT_USER_CONTENT}/provisioning/ansible_hosts -o ansible_hosts
+    curl ${GIT_USER_CONTENT}/provisioning/spring-boot.yml -o spring-boot.yml
+fi
 
 # setup spring-boot
 ansible-playbook -i ansible_hosts spring-boot.yml
