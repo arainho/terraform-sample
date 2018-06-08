@@ -35,6 +35,9 @@ Generate an execution plan
 terraform plan -out="./terraform.plan"
 ```
 
+
+# 6. Checking requirements
+
 - [x]Define Infrastructure using terraform.
 - [x]Here you should assume that you are using an empty provider; 
 - [x]You will need to make sure that all necessary dependencies are defined on the terraform file.
@@ -46,6 +49,7 @@ For the purpose of this exercise your setup should incorporate:
 
 Deploy the application to created servers; 
 - [x] you should trigger your deploy using ansible, puppet or chef when terraform initialisation is complete.
+
 
 ---
 [appropriate package]: <https://www.terraform.io/downloads.html>
