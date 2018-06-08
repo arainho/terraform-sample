@@ -8,7 +8,7 @@ apt-get update -y
 apt-get install -y software-properties-common ansible curl git 
 apt-add-repository -y ppa:ansible/ansible
 apt-get update -y
-ansible-galaxy install ansible-springboot
+ansible-galaxy install remyma.springboot
 
 # grab webapp jar and ansible playbook 
 curl ${GIT_USER_CONTENT}/src/${JAR_FILE} -o ${JAR_FILE}
