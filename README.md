@@ -1,6 +1,12 @@
 # rho
 DevOps Exercice
 
+# 0. Generate SSH Keys 
+First generate public/private rsa key pair
+```
+ssh-keygen -t rsa -b 4096 -C "Terraform key" -f terraform_rsa                       Fri Jun  8 02:11:13 2018
+```
+
 # 1. Install terraform
 To install Terraform, find the [appropriate package] for your system, download and install it.
 
@@ -37,13 +43,11 @@ terraform plan -out="./terraform.plan"
 
 # 6. Scale Up and Down
 To change the number of application servers, edit `main.tf` and change `count` value.
-
 ```
 vi main.tf
  
   count = 3
 ```
-
 
 # 7. Checking requirements
 
