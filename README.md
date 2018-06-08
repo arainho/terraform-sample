@@ -4,7 +4,7 @@ DevOps Exercice
 # 0. Generate SSH Keys 
 First generate public/private rsa key pair
 ```
-ssh-keygen -t rsa -b 4096 -C "Terraform key" -f terraform_rsa                       Fri Jun  8 02:11:13 2018
+ssh-keygen -t rsa -b 4096 -C "Terraform key" -f terraform_rsa
 ```
 
 # 1. Install terraform
