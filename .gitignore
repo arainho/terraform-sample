@@ -202,3 +202,6 @@ gradle-app.setting
 # Ignore private and public key
 terraform_rsa
 terraform_rsa.pub
+
+# Ignore terraform plan
+terraform.plan
