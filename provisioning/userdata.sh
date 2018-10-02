@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
 JAR_FILE="gs-rest-service.jar"
-GIT_USER_CONTENT="https://raw.githubusercontent.com/arainho/terraform-sample/master"
+GIT_USER_CONTENT="https://raw.githubusercontent.com/arainho/terraform-sample/master/"
 
 # dependencies
 apt-get update -y
