@@ -199,5 +199,6 @@ gradle-app.setting
 
 # End of https://www.gitignore.io/api/linux,macos,ansible,windows,intellij,terraform,chefcookbook,maven,gradle
 
-# Ignore private key
+# Ignore private and public key
 terraform_rsa
+terraform_rsa.pub
