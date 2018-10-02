@@ -50,6 +50,8 @@ vi main.tf
   count = 3
 ```
 
+# 7. Notes
+Change `GIT_USER_CONTENT` variable inside `provisioning/userdata.sh` according to your environment.
 
 ---
 [appropriate package]: <https://www.terraform.io/downloads.html>
